@@ -38,7 +38,7 @@ parser.add_argument("-d","--debug", action="store_true", default= False, help="a
 parser.add_argument("-s","--port", nargs = 1, metavar =("port"), help="port")
 group.add_argument("-c","--channel", metavar =("channel"), help="channel")
 group.add_argument("-k","--key", metavar =("key remote"), help="remote key eg. 'KEY_MUTE'")
-group.add_argument("-m","--mute", metavar =("mute"), help="mute")
+group.add_argument("-m","--mute", action="store_true" ,default=False, help="mute")
 parser.add_argument("ip", help="host ip")
 parser.add_argument("-l","--log", nargs = 1, metavar =("log File"), default= False, help=" path file to save log")
 parser.add_argument('-v', '--version', action='version', version= VERSION  + "\n" +  AUTHOR)
